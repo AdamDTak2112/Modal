@@ -14,11 +14,13 @@ for (let i = 0; i < btnsShowModal.length; i++) {
             overlay.classList.remove('hidden');
         });
 
-    const closeModel = function () {
-        modal.classList.add('hidden');
-        overlay.classList.add('hidden');
-    }
 
-    btnCloseModal.addEventListener('click', closeModel);
-    overlay.addEventListener('click', closeModel);
 }
+
+const closeModel = function () {
+    modal.classList.add('hidden');
+    overlay.classList.add('hidden');
+}
+
+btnCloseModal.addEventListener('click', closeModel);
+overlay.addEventListener('click', closeModel);
