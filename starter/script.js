@@ -11,5 +11,14 @@ for (let i = 0; i < btnsShowModal.length; i++) {
         function () {
             console.log(`Button #${i+1} clicked`);
             modal.classList.remove('hidden');
+            overlay.classList.remove('hidden');
         });
+
+    const closeModel = function () {
+        modal.classList.add('hidden');
+        overlay.classList.add('hidden');
+    }
+
+    btnCloseModal.addEventListener('click', closeModel);
+    overlay.addEventListener('click', closeModel);
 }
